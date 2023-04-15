@@ -32,6 +32,9 @@ contract ClaverToken{
         emit Minted(owner, amount);
     }
 
+    function getTotalSupply() public view returns(uint){
+        return totalSupply;
+    }
 
     function balanceOf(address account) public view returns(uint256){
         return balances[account];
